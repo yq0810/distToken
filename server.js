@@ -19919,7 +19919,7 @@ var PS = {};
                                       throw new Error("Failed pattern match at UI.Component.Root (line 243, column 65 - line 246, column 100): " + [ optionType.constructor.name ]);
                                   })()), Halogen_HTML_CSS.style(CSS_Geometry.width((function () {
                                       if (inputType instanceof ElemAddress) {
-                                          return CSS_Size.px(450.0);
+                                          return CSS_Size.px(490.0);
                                       };
                                       if (inputType instanceof ElemAmount) {
                                           return CSS_Size.px(200.0);

@@ -17948,7 +17948,7 @@ var PS = {};
                       };
                       throw new Error("Failed pattern match at UI.Component.Header.Component (line 107, column 15 - line 112, column 53): " + [ v.constructor.name ]);
                   };
-                  return Halogen_HTML_Elements.header([ UI_Utils.css("flex flex-grow-0 flex-no-wrap relative m-0 p-1 w-full z-10 top-0 h-12 object-top") ])([ Halogen_HTML_Elements.div([ UI_Utils.css("flex mx-auto w-full h-full align-middle items-center") ])([ Halogen_HTML_Elements.div([ UI_Utils.css("h-full inline-flex flex-none mx-2 lg:mx-4 text-2xl") ])([ Halogen_HTML_Core.text("Dist Token v2") ]), Halogen_HTML_Elements.div([ Halogen_HTML_Properties.id_("header-spacer"), UI_Utils.css("flex-auto flex-grow h-full") ])([  ]), Halogen_HTML_Elements.div([ UI_Utils.css("inline-flex h-full mx-2 md:mx-4 lg:mx-6 xl:mx-10") ])([ Halogen_HTML_Elements.span([ UI_Utils.css("p-1 inline-flex mx-auto flex-grow h-full align-middle items-center font-medium") ])([ connectHTML(s.account) ]), Halogen_HTML_Elements.span([ UI_Utils.css("inline-flex mx-auto flex-grow h-full align-middle items-center font-medium") ])([ Halogen_HTML_Core.text(stateText) ]) ]) ]) ]);
+                  return Halogen_HTML_Elements.header([ UI_Utils.css("flex flex-grow-0 flex-no-wrap relative m-0 p-1 w-full z-10 top-0 h-12 object-top") ])([ Halogen_HTML_Elements.div([ UI_Utils.css("flex mx-auto w-full h-full align-middle items-center") ])([ Halogen_HTML_Elements.div([ UI_Utils.css("h-full inline-flex flex-none mx-4 text-2xl") ])([ Halogen_HTML_Core.text("Dist Token v2") ]), Halogen_HTML_Elements.div([ Halogen_HTML_Properties.id_("header-spacer"), UI_Utils.css("flex-auto flex-grow h-full") ])([  ]), Halogen_HTML_Elements.div([ UI_Utils.css("inline-flex h-full mx-4 lg:mx-6 ") ])([ Halogen_HTML_Elements.span([ UI_Utils.css("p-1 inline-flex mx-auto flex-grow h-full align-middle items-center font-medium") ])([ connectHTML(s.account) ]), Halogen_HTML_Elements.span([ UI_Utils.css("inline-flex mx-auto flex-grow h-full align-middle items-center font-medium") ])([ Halogen_HTML_Core.text(stateText) ]) ]) ]) ]);
               };
               var handleAction = function (v) {
                   if (v instanceof Connect) {
@@ -18772,7 +18772,7 @@ var PS = {};
                   if (v1.value0 instanceof Data_Maybe.Just && v1.value1 instanceof Data_Maybe.Just) {
                       var $38 = Data_Eq.eq(Network_Ethereum_Core_Signatures.addressEq)(v1.value0.value0)(v1.value1.value0) || Data_Eq.eq(Network_Ethereum_Core_Signatures.addressEq)(view.sharer)(v1.value1.value0);
                       if ($38) {
-                          return Halogen_HTML_Elements.tbody([  ])([ Halogen_HTML_Elements.tr([ UI_Utils.css("sm:table-row line-height-event-log border-b border-dullergray border-opacity-75 last:border-b-0") ])(descriptionCell) ]);
+                          return Halogen_HTML_Elements.tbody([  ])([ Halogen_HTML_Elements.tr([ UI_Utils.css("line-height-event-log border-b border-dullergray border-opacity-75 last:border-b-0") ])(descriptionCell) ]);
                       };
                       return Halogen_HTML_Elements.tbody([  ])([ Halogen_HTML_Elements.tr([ UI_Utils.css("") ])([  ]) ]);
                   };
@@ -18930,7 +18930,7 @@ var PS = {};
                   };
               };
               var addressLink = addressLink$prime(false);
-              return Halogen_HTML_Elements.div([ UI_Utils.css("flex w-full px-8 md:p-8 lg:pt-20 text-center") ])([ Halogen_HTML_Elements.table([ UI_Utils.css("w-full") ])(Data_Semigroup.append(Data_Semigroup.semigroupArray)([ tableHead ])(renderTableEntries)) ]);
+              return Halogen_HTML_Elements.div([ UI_Utils.css("flex w-full px-8 pt-20 text-center") ])([ Halogen_HTML_Elements.table([ UI_Utils.css("w-full") ])(Data_Semigroup.append(Data_Semigroup.semigroupArray)([ tableHead ])(renderTableEntries)) ]);
           };
           var $$eval = (function () {
               var handleQuery = function (v) {
@@ -19884,7 +19884,7 @@ var PS = {};
                           return "nftTable";
                       }))(Data_Ord.ordUnit)(UI_Component_RelayableNFT_Table["_nftTable"])(Data_Unit.unit)(UI_Component_RelayableNFT_Table.component(dictMonadAff)(dictMonadAsk))(Data_Unit.unit)(Data_Void.absurd) ]);
                   };
-                  return Halogen_HTML_Elements.div([ Halogen_HTML_Properties.id_(""), UI_Utils.css("flex-1w-full lg:w-3/4 xl:w-3/4 overflow-x-hidden overflow-visible  ") ])([ Halogen_HTML.slot()(new Data_Symbol.IsSymbol(function () {
+                  return Halogen_HTML_Elements.div([ Halogen_HTML_Properties.id_(""), UI_Utils.css("flex-1  w-3/4  overflow-x-hidden overflow-visible  ") ])([ Halogen_HTML.slot()(new Data_Symbol.IsSymbol(function () {
                       return "nftTable";
                   }))(Data_Ord.ordUnit)(UI_Component_RelayableNFT_Table["_nftTable"])(Data_Unit.unit)(UI_Component_RelayableNFT_Table.component(dictMonadAff)(dictMonadAsk))(Data_Unit.unit)(Data_Void.absurd) ]);
               };
@@ -19963,7 +19963,7 @@ var PS = {};
                       };
                   };
               };
-              var optionPage = Halogen_HTML_Elements.div([ Halogen_HTML_Properties.id_(""), UI_Utils.css("mb-0 list-none flex-wrap p-4  grid grid-cols-1 place-content-stretch h-1/2  background-gradient-option rounded") ])(Data_Semigroup.append(Data_Semigroup.semigroupArray)([ Halogen_HTML_Elements.ul([ UI_Utils.css("flex absolute"), Halogen_HTML_CSS.style(Control_Bind.discard(Control_Bind.discardUnit)(CSS_Stylesheet.bindStyleM)(CSS_Geometry.top(CSS_Size.px(45.0)))(function () {
+              var optionPage = Halogen_HTML_Elements.div([ Halogen_HTML_Properties.id_(""), UI_Utils.css("mb-0 list-none flex-wrap p-4  grid  place-content-stretch h-1/2  background-gradient-option rounded") ])(Data_Semigroup.append(Data_Semigroup.semigroupArray)([ Halogen_HTML_Elements.ul([ UI_Utils.css("flex absolute"), Halogen_HTML_CSS.style(Control_Bind.discard(Control_Bind.discardUnit)(CSS_Stylesheet.bindStyleM)(CSS_Geometry.top(CSS_Size.px(45.0)))(function () {
                   return Control_Bind.discard(Control_Bind.discardUnit)(CSS_Stylesheet.bindStyleM)(CSS_Geometry.left(CSS_Size.px(15.0)))(function () {
                       return CSS_Geometry.width(CSS_Size.px(600.0));
                   });
@@ -19977,10 +19977,10 @@ var PS = {};
               var showPage = function (v) {
                   return function (v1) {
                       if (v instanceof Data_Maybe.Just && (v1 instanceof Data_Maybe.Just && Data_Eq.eq(Network_Ethereum_Core_Signatures.addressEq)(v.value0)(v1.value0))) {
-                          return Halogen_HTML_Elements.div([ UI_Utils.css("flex h-full w-full min-h-screen-sans-3-rem"), Halogen_HTML_CSS.style(CSS_Geometry.minWidth(CSS_Size.px(1200.0))) ])([ optionPage, tablePage("") ]);
+                          return Halogen_HTML_Elements.div([ UI_Utils.css("flex h-full w-full min-h-screen-sans-3-rem"), Halogen_HTML_CSS.style(CSS_Geometry.minWidth(CSS_Size.px(1500.0))) ])([ optionPage, tablePage("") ]);
                       };
                       if (v instanceof Data_Maybe.Just && (v1 instanceof Data_Maybe.Just && Data_Eq.notEq(Network_Ethereum_Core_Signatures.addressEq)(v.value0)(v1.value0))) {
-                          return Halogen_HTML_Elements.div([ UI_Utils.css("flex h-full w-full min-h-screen-sans-3-rem"), Halogen_HTML_CSS.style(CSS_Geometry.minWidth(CSS_Size.px(1200.0))) ])([ tablePage("full") ]);
+                          return Halogen_HTML_Elements.div([ UI_Utils.css("flex h-full w-full min-h-screen-sans-3-rem"), Halogen_HTML_CSS.style(CSS_Geometry.minWidth(CSS_Size.px(1500.0))) ])([ tablePage("full") ]);
                       };
                       return Halogen_HTML_Elements.div([ UI_Utils.css("hidden") ])([ tablePage("full") ]);
                   };

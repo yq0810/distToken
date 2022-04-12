@@ -21027,57 +21027,57 @@ var PS = {};
                                                                   return Control_Applicative.pure(Halogen_Query_HalogenM.applicativeHalogenM)(Data_Unit.unit);
                                                               };
                                                               if (netMeta instanceof Data_Maybe.Just) {
-                                                                  return Control_Bind.discard(Control_Bind.discardUnit)(Halogen_Query_HalogenM.bindHalogenM)(Control_Monad_State_Class.modify_(Halogen_Query_HalogenM.monadStateHalogenM)(function (v4) {
-                                                                      var $257 = {};
-                                                                      for (var $258 in v4) {
-                                                                          if ({}.hasOwnProperty.call(v4, $258)) {
-                                                                              $257[$258] = v4[$258];
-                                                                          };
-                                                                      };
-                                                                      $257.contractAddress = new Data_Maybe.Just(v3.value0.address);
-                                                                      $257.ercAddress = new Data_Maybe.Just(v3.value0.ercTokenAddress);
-                                                                      return $257;
-                                                                  }))(function () {
-                                                                      return Data_Functor["void"](Halogen_Query_HalogenM.functorHalogenM)(Halogen_Query_HalogenM.query()(new Data_Symbol.IsSymbol(function () {
-                                                                          return "nftTable";
-                                                                      }))(Data_Ord.ordUnit)(UI_Component_RelayableNFT_Table["_nftTable"])(Data_Unit.unit)(Halogen_Query.tell(UI_Component_RelayableNFT_Table.BlockExplorerUpdated.create(netMeta.value0.blockExplorer))));
-                                                                  });
+                                                                  return Data_Functor["void"](Halogen_Query_HalogenM.functorHalogenM)(Halogen_Query_HalogenM.query()(new Data_Symbol.IsSymbol(function () {
+                                                                      return "nftTable";
+                                                                  }))(Data_Ord.ordUnit)(UI_Component_RelayableNFT_Table["_nftTable"])(Data_Unit.unit)(Halogen_Query.tell(UI_Component_RelayableNFT_Table.BlockExplorerUpdated.create(netMeta.value0.blockExplorer))));
                                                               };
-                                                              throw new Error("Failed pattern match at UI.Component.RootAction (line 379, column 22 - line 385, column 115): " + [ netMeta.constructor.name ]);
+                                                              throw new Error("Failed pattern match at UI.Component.RootAction (line 379, column 22 - line 382, column 115): " + [ netMeta.constructor.name ]);
                                                           })())(function () {
-                                                              var toastReadyNetworkName = (function () {
-                                                                  if (netMeta instanceof Data_Maybe.Nothing) {
-                                                                      return "Ethereum";
-                                                                  };
-                                                                  if (netMeta instanceof Data_Maybe.Just) {
-                                                                      return netMeta.value0.friendlyName;
-                                                                  };
-                                                                  throw new Error("Failed pattern match at UI.Component.RootAction (line 387, column 50 - line 389, column 65): " + [ netMeta.constructor.name ]);
-                                                              })();
-                                                              return Control_Bind.discard(Control_Bind.discardUnit)(Halogen_Query_HalogenM.bindHalogenM)(Data_Functor["void"](Halogen_Query_HalogenM.functorHalogenM)(Halogen_Query_HalogenM.subscribe(Halogen_Query_EventSource.effectEventSource(dictMonadAff)(function (emitter) {
-                                                                  return function __do() {
-                                                                      Effect_Aff.launchAff_(Control_Lazy.fix(Effect_Aff.lazyAff)(function (loop) {
-                                                                          return Control_Bind.discard(Control_Bind.discardUnit)(Effect_Aff.bindAff)(Control_Bind.bind(Effect_Aff.bindAff)(Effect_Aff_Bus.read(v1.value0))(function (a) {
-                                                                              return Effect_Class.liftEffect(Effect_Aff.monadEffectAff)(Halogen_Query_EventSource.emit(emitter)(new UI_Component_RootType.HandleHeaderMessages(a.value0)));
-                                                                          }))(function () {
-                                                                              return loop;
-                                                                          });
-                                                                      }))();
-                                                                      return Data_Monoid.mempty(Halogen_Query_EventSource.monoidFinalizer(Effect.applicativeEffect));
-                                                                  };
-                                                              }))))(function () {
-                                                                  return Data_Functor["void"](Halogen_Query_HalogenM.functorHalogenM)(Halogen_Query_HalogenM.subscribe(Halogen_Query_EventSource.effectEventSource(dictMonadAff)(function (emitter) {
-                                                                      return function __do() {
-                                                                          var historyFiber = UI_Component_RootWeb3.mkWeb3Monitor({
-                                                                              emitter: emitter,
-                                                                              distToken: v3.value0.address,
-                                                                              ercTokenAddress: v3.value0.ercTokenAddress,
-                                                                              web3Provider: v2.maybeWeb3Provider.value0
-                                                                          })();
-                                                                          Halogen_Query_EventSource.emit(emitter)(UI_Component_RootType.StartConnect.value)();
-                                                                          return Halogen_Query_EventSource.Finalizer(Effect_Aff.launchAff_(Effect_Aff.killFiber(Effect_Exception.error("Component teardown"))(historyFiber)));
+                                                              return Control_Bind.discard(Control_Bind.discardUnit)(Halogen_Query_HalogenM.bindHalogenM)(Control_Monad_State_Class.modify_(Halogen_Query_HalogenM.monadStateHalogenM)(function (v4) {
+                                                                  var $259 = {};
+                                                                  for (var $260 in v4) {
+                                                                      if ({}.hasOwnProperty.call(v4, $260)) {
+                                                                          $259[$260] = v4[$260];
                                                                       };
-                                                                  })));
+                                                                  };
+                                                                  $259.contractAddress = new Data_Maybe.Just(v3.value0.address);
+                                                                  $259.ercAddress = new Data_Maybe.Just(v3.value0.ercTokenAddress);
+                                                                  return $259;
+                                                              }))(function () {
+                                                                  var toastReadyNetworkName = (function () {
+                                                                      if (netMeta instanceof Data_Maybe.Nothing) {
+                                                                          return "Ethereum";
+                                                                      };
+                                                                      if (netMeta instanceof Data_Maybe.Just) {
+                                                                          return netMeta.value0.friendlyName;
+                                                                      };
+                                                                      throw new Error("Failed pattern match at UI.Component.RootAction (line 387, column 50 - line 389, column 65): " + [ netMeta.constructor.name ]);
+                                                                  })();
+                                                                  return Control_Bind.discard(Control_Bind.discardUnit)(Halogen_Query_HalogenM.bindHalogenM)(Data_Functor["void"](Halogen_Query_HalogenM.functorHalogenM)(Halogen_Query_HalogenM.subscribe(Halogen_Query_EventSource.effectEventSource(dictMonadAff)(function (emitter) {
+                                                                      return function __do() {
+                                                                          Effect_Aff.launchAff_(Control_Lazy.fix(Effect_Aff.lazyAff)(function (loop) {
+                                                                              return Control_Bind.discard(Control_Bind.discardUnit)(Effect_Aff.bindAff)(Control_Bind.bind(Effect_Aff.bindAff)(Effect_Aff_Bus.read(v1.value0))(function (a) {
+                                                                                  return Effect_Class.liftEffect(Effect_Aff.monadEffectAff)(Halogen_Query_EventSource.emit(emitter)(new UI_Component_RootType.HandleHeaderMessages(a.value0)));
+                                                                              }))(function () {
+                                                                                  return loop;
+                                                                              });
+                                                                          }))();
+                                                                          return Data_Monoid.mempty(Halogen_Query_EventSource.monoidFinalizer(Effect.applicativeEffect));
+                                                                      };
+                                                                  }))))(function () {
+                                                                      return Data_Functor["void"](Halogen_Query_HalogenM.functorHalogenM)(Halogen_Query_HalogenM.subscribe(Halogen_Query_EventSource.effectEventSource(dictMonadAff)(function (emitter) {
+                                                                          return function __do() {
+                                                                              var historyFiber = UI_Component_RootWeb3.mkWeb3Monitor({
+                                                                                  emitter: emitter,
+                                                                                  distToken: v3.value0.address,
+                                                                                  ercTokenAddress: v3.value0.ercTokenAddress,
+                                                                                  web3Provider: v2.maybeWeb3Provider.value0
+                                                                              })();
+                                                                              Halogen_Query_EventSource.emit(emitter)(UI_Component_RootType.StartConnect.value)();
+                                                                              return Halogen_Query_EventSource.Finalizer(Effect_Aff.launchAff_(Effect_Aff.killFiber(Effect_Exception.error("Component teardown"))(historyFiber)));
+                                                                          };
+                                                                      })));
+                                                                  });
                                                               });
                                                           });
                                                       };
